@@ -3,6 +3,7 @@ $(document).ready(function(){
    mobPerson();
    tab();
    sliderTabs();
+   showPassword();
 });
 
 function mobBurger() {
@@ -75,12 +76,13 @@ function sliderTabs() {
    }
 };
 
-$('.password-open').click(function() {
-   if($('.form__inputPassword').attr('type') == 'text') {
-      $('.form__inputPassword').attr('type','password');
-   }
-   else {
-      $('.form__inputPassword').attr('type','text');
-   }
-
-})
+function showPassword() {
+   $('.password-open').click(function() {
+      if($(this).prev().attr('type') == 'text') {
+         $(this).prev().attr('type','password');
+      }
+      else {
+         $(this).prev().attr('type','text');
+      }
+   });
+};
