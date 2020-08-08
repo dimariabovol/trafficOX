@@ -162,13 +162,15 @@
                   <div class="window-right__subtitle subtitle subtitle-d">We'll send password reset instructions.</div>
                   <form action="#" class="window__form form">
                      <div class="form__block">
-                        <input type="text" class="form__input" placeholder="email">
+                        <input type="email" class="form__input" placeholder="email" required>
                         <svg class="icon icon-email"><use xlink:href="#icon-email"></use>
                            <symbol id="icon-email" viewBox="0 0 43 32">
                               <path d="M36.916 0h-31.774c-2.836 0-5.142 2.306-5.142 5.142v21.716c0 2.836 2.306 5.142 5.142 5.142h31.765c2.836 0 5.142-2.306 5.142-5.142v-21.707c0.009-2.836-2.297-5.151-5.133-5.151zM39.709 26.858c0 1.54-1.253 2.793-2.793 2.793h-31.774c-1.54 0-2.793-1.253-2.793-2.793v-21.707c0-1.54 1.253-2.793 2.793-2.793h31.765c1.54 0 2.793 1.253 2.793 2.793v21.707h0.009z"></path>
                               <path d="M26.519 15.73l10.284-9.222c0.479-0.435 0.522-1.175 0.087-1.662-0.435-0.479-1.175-0.522-1.662-0.087l-14.182 12.729-2.767-2.471c-0.009-0.009-0.017-0.017-0.017-0.026-0.061-0.061-0.122-0.113-0.191-0.165l-11.258-10.075c-0.487-0.435-1.227-0.391-1.662 0.096s-0.392 1.227 0.096 1.662l10.406 9.301-10.362 9.701c-0.47 0.444-0.496 1.183-0.052 1.662 0.235 0.244 0.548 0.374 0.861 0.374 0.287 0 0.574-0.104 0.8-0.313l10.519-9.84 2.854 2.549c0.226 0.2 0.505 0.296 0.783 0.296s0.566-0.105 0.783-0.305l2.932-2.628 10.458 9.936c0.226 0.218 0.522 0.322 0.809 0.322 0.313 0 0.618-0.122 0.853-0.366 0.444-0.47 0.426-1.218-0.043-1.662l-10.327-9.805z"></path>
                               </symbol>
                         </svg>
+                        <div class="valid-icon"></div>
+                        <div class="invalid-icon"></div>
                      </div>
                      <div class="form__control">
                         <button class="form__btn btn btn-bg btn-recovery">Send password</button>

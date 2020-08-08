@@ -74,3 +74,13 @@ function sliderTabs() {
       });
    }
 };
+
+$('.password-open').click(function() {
+   if($('.form__inputPassword').attr('type') == 'text') {
+      $('.form__inputPassword').attr('type','password');
+   }
+   else {
+      $('.form__inputPassword').attr('type','text');
+   }
+
+})
