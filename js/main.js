@@ -4,6 +4,8 @@ $(document).ready(function(){
    tab();
    sliderTabs();
    showPassword();
+   fume();
+   dot();
 });
 
 function mobBurger() {
@@ -86,3 +88,23 @@ function showPassword() {
       }
    });
 };
+
+function  fume(){
+   var animation = bodymovin.loadAnimation({
+      container: document.getElementById('anim'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: "js/anim/smok_bull.json"
+  })
+}
+
+function  dot(){
+   var animation = bodymovin.loadAnimation({
+      container: document.getElementById('dot'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: "js/anim/dot.json"
+  })
+}
