@@ -5,6 +5,7 @@ $(document).ready(function(){
    sliderTabs();
    showPassword();
    fume();
+   dots();
 });
 
 function mobBurger() {
@@ -95,5 +96,15 @@ function  fume(){
       loop: true,
       autoplay: true,
       path: "js/anim/smok_bull.json"
+  })
+}
+
+function  dots(){
+   var animation = bodymovin.loadAnimation({
+      container: document.getElementById('dots'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: "js/anim/dots.json"
   })
 }
