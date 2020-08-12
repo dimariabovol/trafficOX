@@ -103,8 +103,10 @@ function  dots(){
    var animation = bodymovin.loadAnimation({
       container: document.getElementById('dots'),
       renderer: 'svg',
-      loop: true,
+      // loop: true,
       autoplay: true,
       path: "js/anim/dots.json"
-  })
+  });
+  animation.setSpeed(3);
+  animation.setDuration(55);
 }
