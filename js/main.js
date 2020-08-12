@@ -1,11 +1,3 @@
-var animationFumePreloader = bodymovin.loadAnimation({
-   container: document.getElementById('anim-preloader'),
-   renderer: 'svg',
-   loop: true,
-   autoplay: true,
-   path: "js/anim/smok_bull.json"
-})
-
 var animationDots = bodymovin.loadAnimation({
    container: document.getElementById('dots'),
    renderer: 'svg',
@@ -115,16 +107,3 @@ function showPassword() {
       }
    });
 };
-
-function loadData() {
-   return new Promise((resolve, reject) => {
-     setTimeout(resolve, 2000);
-   })
-}
- 
-loadData()
-.then(() => {
-   let preloaderEl = document.getElementById('preloader');
-   preloaderEl.classList.add('hidden');
-   preloaderEl.classList.remove('visible');
-});
