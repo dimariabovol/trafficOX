@@ -1,12 +1,39 @@
+var animationFumePreloader = bodymovin.loadAnimation({
+   container: document.getElementById('anim-preloader'),
+   renderer: 'svg',
+   loop: true,
+   autoplay: true,
+   path: "js/anim/smok_bull.json"
+})
+
+var animationDots = bodymovin.loadAnimation({
+   container: document.getElementById('dots'),
+   renderer: 'svg',
+   autoplay: true,
+   path: "js/anim/dots.json"
+});
+animationDots.setSpeed(2);
+
+var animationFume = bodymovin.loadAnimation({
+   container: document.getElementById('anim'),
+   renderer: 'svg',
+   loop: true,
+   autoplay: true,
+   path: "js/anim/smok_bull.json"
+})
+
 $(document).ready(function(){
+   tabShow();
    mobBurger();
    mobPerson();
    tab();
    sliderTabs();
    showPassword();
-   fume();
-   dots();
 });
+
+function tabShow() {
+   $(".tab__content").addClass('tab-show');
+}
 
 function mobBurger() {
    $(".header__burger").on('click', function () {
@@ -89,24 +116,15 @@ function showPassword() {
    });
 };
 
-function  fume(){
-   var animation = bodymovin.loadAnimation({
-      container: document.getElementById('anim'),
-      renderer: 'svg',
-      loop: true,
-      autoplay: true,
-      path: "js/anim/smok_bull.json"
-  })
+function loadData() {
+   return new Promise((resolve, reject) => {
+     setTimeout(resolve, 2000);
+   })
 }
-
-function  dots(){
-   var animation = bodymovin.loadAnimation({
-      container: document.getElementById('dots'),
-      renderer: 'svg',
-      // loop: true,
-      autoplay: true,
-      path: "js/anim/dots.json"
-  });
-  animation.setSpeed(3);
-  animation.setDuration(55);
-}
+ 
+loadData()
+.then(() => {
+   let preloaderEl = document.getElementById('preloader');
+   preloaderEl.classList.add('hidden');
+   preloaderEl.classList.remove('visible');
+});
