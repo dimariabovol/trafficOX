@@ -1,6 +1,6 @@
 Is one of my freelance projects.
 
-In the project I used animation by means of [Lottie.js](http://airbnb.io/lottie/#/) plugin.
+I used [Lottie.js](http://airbnb.io/lottie/#/) plugin for making animation in the site. I learned how to work (add and change) with animation by means of .json files.
 
 I made home page and some registration pages, which you can see below. Links:
 
