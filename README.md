@@ -1,9 +1,15 @@
-[Home](https://dimariabovol.github.io/trafficOX/)
+Is one of my freelance projects.
 
-[Registration](https://dimariabovol.github.io/trafficOX/registration.html)
+In the project I used animation by means of [Lottie.js](http://airbnb.io/lottie/#/) plugin.
 
-[Login](https://dimariabovol.github.io/trafficOX/login.html)
+I made home page and some registration pages, which you can see below. Links:
 
-[Recovery password](https://dimariabovol.github.io/trafficOX/recovery.html)
+[Home page](https://dimariabovol.github.io/trafficOX/)
 
-[Password send](https://dimariabovol.github.io/trafficOX/send.html)
+[Registration page](https://dimariabovol.github.io/trafficOX/registration.html)
+
+[Login page](https://dimariabovol.github.io/trafficOX/login.html)
+
+[Recovery password page](https://dimariabovol.github.io/trafficOX/recovery.html)
+
+[Password send page](https://dimariabovol.github.io/trafficOX/send.html)
